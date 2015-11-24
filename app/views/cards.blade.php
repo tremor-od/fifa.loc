@@ -84,47 +84,6 @@
                     <?php $ii++ ?>
                 @endforeach
 
-
-                {{--<div class="BlackBox">--}}
-                    {{--<img src="images/totsCard.png" alt="tots">    --}}
-                    {{--<h3>TOTS</h3>--}}
-                    {{--<p>Lorem ipsum ad his scripta<br> blandit partiendo.</p>--}}
-                    {{--<img src="images/motmCard.png" alt="motm">     --}}
-                    {{--<h3>MOTM</h3>--}}
-                    {{--<p>Lorem ipsum ad his scripta<br> blandit partiendo.</p>--}}
-                {{--</div><!-- black box -->--}}
-                {{--<div class="grayBox">--}}
-                    {{--<img src="images/totwCarc.png" alt="totw">     --}}
-                    {{--<h3>TOTW</h3>--}}
-                    {{--<p>Lorem ipsum ad his scripta<br> blandit partiendo.</p>--}}
-                    {{--<img src="images/ninja.png" alt="ninja">      --}}
-                    {{--<h3>NINJA SURPRISE PACK</h3>--}}
-                    {{--<p>Lorem ipsum ad his scripta<br> blandit partiendo.</p>--}}
-                {{--</div><!-- gray box -->--}}
-                  {{--<div class="BlackBox">--}}
-                    {{--<img src="images/totsCard.png" alt="tots">    --}}
-                    {{--<h3>TOTS</h3>--}}
-                    {{--<p>Lorem ipsum ad his scripta<br> blandit partiendo.</p>--}}
-                    {{--<img src="images/100K.png" alt="100k">         --}}
-                    {{--<h3>100K</h3>--}}
-                    {{--<p>Lorem ipsum ad his scripta<br> blandit partiendo.</p>--}}
-                {{--</div><!-- black box -->--}}
-                 {{--<div class="grayBox">--}}
-                    {{--<img src="images/legendCard.png" alt="legend">     --}}
-                    {{--<h3>LEGEND</h3>--}}
-                    {{--<p>Lorem ipsum ad his scripta<br> blandit partiendo.</p>--}}
-                    {{--<img src="images/50K.png" alt="50k">      --}}
-                    {{--<h3>50K</h3>--}}
-                    {{--<p>Lorem ipsum ad his scripta<br> blandit partiendo.</p>--}}
-                {{--</div><!-- gray box -->--}}
-                  {{--<div class="BlackBox">--}}
-                    {{--<img src="images/heroCard.png" alt="hero">     --}}
-                    {{--<h3>HERO</h3>--}}
-                    {{--<p>Lorem ipsum ad his scripta<br> blandit partiendo.</p>--}}
-                    {{--<img src="images/25k.png" alt="25k">      --}}
-                    {{--<h3>25K</h3>--}}
-                    {{--<p>Lorem ipsum ad his scripta<br> blandit partiendo.</p>--}}
-                {{--</div><!-- black box -->--}}
             </div><!-- cards -->
     </section>
 </div><!-- wrapper -->

@@ -35,9 +35,6 @@ class HomeController extends BaseController {
 
         $this->data['pack'] = Pack::find($packId);
         $this->data['packCardType'] = $this->data['pack']->more()->where('percent', '>', 0)->get();
-//
-//        echo count($this->data['packCardType']);
-
 
         return View::make('opened_pack')->with($this->data);
     }

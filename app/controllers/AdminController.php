@@ -280,9 +280,6 @@ class AdminController  extends BaseController {
                 }
                 $pack->pctList = $array;
             }
-//            $this->data['pctList'] = $array;
-
-
 
             return View::make('admin.pack.list')->with($this->data);
         }
@@ -332,7 +329,6 @@ class AdminController  extends BaseController {
                     $pct->percent = $percent;
                     $pct->save();
                 }
-
 
                 $affectedRows = Pack::where('id', $packId)->update($pack);
 
@@ -711,8 +707,6 @@ class AdminController  extends BaseController {
      * @author Tremor
      */
     public function userOrders($userId){
-
-//        $this->data['orderList'] = PackStatistic::where('user_id', $userId)->orderBy('id', 'desc');
 
         $this->data['orderList'] = PackStatistic::where('user_id', $userId)->orderBy('id', 'desc')->get();
 

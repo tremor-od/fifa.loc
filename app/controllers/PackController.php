@@ -60,7 +60,6 @@ class PackController extends HomeController {
                     if ($rand < $pct->percent) { // 80% случаев
 
                         $cardCoins = $card->coins;
-//                        $winningSum = $winningSum + $cardCoins;
 
                         $winningCard[$card->name]['countWin'] ++;
                         $winningCard[$card->name]['winWithPercent'] .= $rand.', ';
@@ -125,10 +124,6 @@ class PackController extends HomeController {
                 $cards .=  $key.'('.$win['countWin'].') ';
             }
 
-//            $order->cards = $cards;
-//            $order->win_cards = json_encode($winningCardPlayers);
-//            $order->save();
-
             // Запись в таблицу packStatistic
             $statistic = new PackStatistic();
 
@@ -151,7 +146,6 @@ class PackController extends HomeController {
 
     public function opened($packId){
 
-//        $this->data['pack'] = PackStatistic::where('pack_id', $packId)->where('user_id', Auth::id())->orderBy('created_at', 'desc');
         $this->data['packStatistic'] = PackStatistic::where('pack_id', $packId)->where('user_id', Auth::id())->latest('created_at')->first();
         $this->data['packStatistic']->win_cards =  json_decode($this->data['packStatistic']->win_cards);
         $win_cards_list = $this->data['packStatistic']->win_cards;

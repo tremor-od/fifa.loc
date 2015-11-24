@@ -87,7 +87,6 @@ class CabinetController extends HomeController {
 
                 $user->save();
 
-//                $this->setMessage(trans('note.cabinet.successEdit'), 'success');
                 return Redirect::to($_SERVER['REQUEST_URI'])->withInput();
 
             }
