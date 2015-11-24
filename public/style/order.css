@@ -1,0 +1,617 @@
+/************************************** general  */
+
+h1, h2, h3, h4, h5, h6, ul, p{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Brandon_blk;
+    src:url(../fonts/Brandon_blk.otf);
+}
+@font-face {
+    font-family: Brandon_bld;
+    src:url(../fonts/Brandon_bld.otf);
+}
+.wrapper{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: initial;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+}
+.container{
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+}
+img{cursor: pointer;}
+/*********************************** header */
+header{
+	position: relative;
+    height: 127px;
+    background-image: url(../images/header_bg.png);
+    background-size: cover;
+    background-position: center center;
+}
+header #menuIcon{
+	display: none;
+	cursor: pointer;
+	left: 0px;
+	position: absolute;
+	top: 90px;
+	color: #fff;
+}
+header #menuIcon img{
+	top:9px;
+	position: relative;
+}
+header #search{
+	overflow: hidden;
+    float: right;
+    margin-top: 70px;
+    margin-left: 10px;
+}
+header #search img , header #search input[type=text]{
+	position: relative;
+	right: -125px;
+}
+header #search input[type=text]{
+	padding: 10px;
+	width: 100px;
+	
+}
+header #logo{
+    float: left;
+    margin-top: 40px;
+}
+header ul.mainUl{
+    margin-top: 70px;
+    list-style: none;
+    float: right;
+}
+header ul.mainUl > li{
+	position: relative;
+    float: left;
+    background-image: url(../images/arrow_down.png);
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    margin-left: 23px;
+    padding-right: 20px;
+}
+header ul.mainUl > li a{
+	padding-bottom: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    color:#fff;
+    font-weight: 700;
+	font-family: Brandon_bld;
+}
+header ul.mainUl > li:first-child{margin-left: 0px;}
+header .myAccount{
+    position: absolute;
+    right: 0px;
+    width: 132px;
+    height: 39px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    float: right;
+    box-sizing: border-box;
+}
+header .myAccount img{
+    margin-top: 5px;
+    margin-left: 5px;
+    position: relative;
+    top:5px;
+}
+header ul.subMenuUl{
+	display: none;
+	position: absolute;
+	list-style: none;
+	top:40px;
+}
+header ul.subMenuUl li {display: block;}
+header ul.subMenuUl li a{
+	display: block;
+	background-color: #202122;
+	padding: 10px;
+	width: 100px;
+}
+/*********************************** footer */
+footer{
+    margin: 0 auto;
+    clear: both;
+    width: 100%;
+    background-color: #343434;
+    color: #fff;
+    height: 473px;
+    padding-top: 57px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+footer h3{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: BrandonGrotesque , sans-serif;
+    margin-bottom: 32px;
+}
+footer ul{list-style: none;}
+footer ul.mainList li{
+  float: left;
+    width: 33.3%;
+}
+footer .products{
+    clear: both;
+    margin-bottom: 145px;
+}
+footer .products img{
+    margin-right: 18px;
+    float: left;
+}
+footer .products p{
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Calibri;
+}
+footer .products p span{font-weight: 400;}
+footer ul.loremIpsumList li{
+    width: 100%;
+    margin-bottom: 30px;
+}
+/*********************************** copyright */
+.copyright {
+    background-color: #000;
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.copyright p{    float: right;}
+
+/*********************************** tots */
+
+.tots{
+	clear: both;
+	height: 625px;
+}
+.tots h1{
+	margin-top: 80px;
+	color: #ffffff;
+    font-family: Brandon_bld;
+	font-size: 36px;
+}
+.tots .selectedPlayer{
+	padding-right: 15px;
+	box-sizing: border-box;
+	border-right: 1px solid #000;
+	width: 248px;
+	float: left;
+}
+.tots .selectedPlayer img{
+	margin-top: 40px;
+	margin-left: -30px;
+}
+.tots .selectedPlayer p{
+	margin-bottom: 10px;
+	color: #eebc00;
+    font-family: Brandon_bld;
+	font-size: 18px;
+}
+.tots .players img{
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+
+
+
+
+/************************************** section */
+h1{
+    font-family: Brandon_bld;
+	font-size: 36px;
+	color: #ffffff;
+	padding-top: 84px;
+	padding-bottom: 15px;
+}
+section{
+	background-color: #fff;
+	padding-top: 70px;
+}
+section #totsTeam{
+	float: left;
+	margin-left: -10px;
+}
+section .Instock{
+	float: left;
+	height: 77px;
+	width: 630px;
+	background-color: #f1f1f1;
+	box-sizing: border-box;
+	padding: 20px;
+}
+section .Instock h2{
+	line-height: 17px;
+	font-size: 30px;
+	color: #006e8e;
+    font-family: Brandon_blk;
+	margin-bottom: 8px;
+}
+section .Instock a{
+	font: 400 14px Arial;
+	color: #3a9900;
+	text-decoration: none;
+}
+section .infoForm , section #converter {
+	float: left;
+	margin-right: 81px;
+}
+section .infoForm{margin-top: 44px;}
+section .infoForm p{
+    font-family: Brandon_blk;
+	font-size: 12px;
+	color: #000000;
+}
+section .infoForm input[type=text]{
+	background-color: #f1f1f1;
+	width: 322px;
+	height: 31px;
+	box-sizing: border-box;
+	margin-bottom: 23px;
+	border: none;
+	padding-left: 10px;
+}
+/************************************** order */
+
+.makePayment h2{
+	color: #a72d25;
+	font: 700 24px Arial;
+	float: right;
+}
+.makePayment span{
+	float: right;
+	font: 400 12px Arial;
+	color: #6c6c6c;
+}
+.makePayment p{
+	margin-bottom: 30px;
+	float: left;
+	font: 400 14px Arial;
+}
+.makePayment p.total{
+	clear: both;
+}
+.makePayment p.bold{
+	float: right;
+}
+.payment{
+	background-color: #fff9e6;
+	box-sizing: border-box;
+	height: 254px;
+	clear: both;
+}
+.payment .addresInfo{
+	border-right: 2px solid #c8c8c8;
+	float: left;
+	width: 300px;
+	box-sizing: border-box;
+	margin: 17px 0;
+	padding: 11px 28px 11px 28px;
+}
+.payment .addresInfo ul{
+	margin-bottom: 44px;
+	list-style: none;
+}
+.payment .addresInfo ul li{	font: 400 14px Calibri;}
+.payment .addresInfo p , .payment .addresInfo span{
+	font: 700 14px Calibri;
+	float: none;
+	margin-bottom: 0;
+	color: #000000;
+
+}
+.payment .addresInfo span{font-weight: 400;}
+.payment .addresInfo a{
+	text-decoration: none;
+	color: #006eb9;
+}
+
+.payment .method{
+	box-sizing: border-box;
+	margin-top: 17px;
+	padding: 11px 0 0 60px;
+	float: right;
+	width: 650px;
+}
+.payment .method p , .payment .method span{
+	float: none;
+	clear: both;
+	font: 700 14px Calibri;		
+}
+.payment .method span{
+	font: italic 14px Calibri;
+	color: #000000;
+}
+.payment .method > div{
+	cursor: pointer;
+	float: left;
+	width: 162px;
+	height: 32px;
+	margin-right: 0;
+	padding: 0 6px;
+	border-right: 1px solid #c5c5c5;
+	border-left: 1px solid #c5c5c5;
+	margin-bottom: 50px;
+}
+.payment .method .paypal{
+	margin-left: -18px;
+	border-left: none;
+	width: 120px;
+	background: url(../images/paypal.png) no-repeat center center; 
+}
+.payment .method .skrill{
+	width: 90px;
+	background: url(../images/skrill.png)no-repeat center center; 
+}
+.payment .method .bitcoin{
+	width: 110px;
+	background: url(../images/bitcoin.png)no-repeat center center; 
+}
+.payment .method .paysafecard{
+	border-right: none;
+	background: url(../images/paysafe.png)no-repeat center center; 
+}
+.payment .method .active , .payment .method > div:hover{
+	-webkit-border-image: url(../images/borderPay.png) 1 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(../images/borderPay.png) 1 stretch; /* Opera 11-12.1 */
+    border-image: url(../images/borderPay.png) 1 stretch;
+}
+.payment .method input[type=text]{
+	box-sizing: border-box;
+	padding-left: 15px;
+	-webkit-border-image: url(../images/borderPay.png) 1 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(../images/borderPay.png) 1 stretch; /* Opera 11-12.1 */
+    border-image: url(../images/borderPay.png) 1 stretch;
+	width: 296px;
+	height: 36px;
+}
+
+/************************************** submit  */
+.submit p{
+	float: right;
+	clear: both;
+	padding-bottom: 15px;
+}
+.submit p span{
+	font: 400 14px Calibri;
+	color: #6c6c6c;
+}
+.submit p a{
+	color: #2ca5c2;
+	text-decoration: none;
+	font: 700 14px Calibri;
+}
+.submit #makePaymentA{
+	display: block;
+	float: right;
+	clear: both;
+	width: 170px;
+	height: 54px;
+    font-family: Brandon_blk;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 13px;
+	margin-top: 25px;
+	margin-bottom: 5px;
+	background-image: url(../images/gree_box.png); 
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size: cover;
+}
+.submit a span{
+	clear: both;
+	color: #287000;
+    font-family: Brandon_blk;
+	font-size: 12px;
+	text-decoration: none;
+	float: right;
+	margin-right: 15px;
+	margin-bottom: 35px;
+}
+/************************************** online security  */
+.onlineSecurity {clear: both;}
+.onlineSecurity > div{
+	margin-bottom: 65px;
+	height: 201px;
+	width: 49%;
+	float: left;
+	box-sizing: border-box;
+	background-color: #f1f1f1;
+	padding:40px 0 35px 28px;
+	font: 400 12px Calibri;
+}
+.onlineSecurity p{padding-bottom: 15px;}
+.onlineSecurity div:last-child{
+	float: right;
+}
+.onlineSecurity p.red{color: #d60000;}
+.onlineSecurity a{
+	text-decoration: none;
+	color: #006e8e;
+}
+.continueShopingPage{
+		background-color: #fff;
+	  clear: both;
+	height: 730px;
+}
+
+/*********************************** queries */
+
+@media(max-width:990px){.container{padding: 0 10px;}}
+@media(max-width:900px){
+	header ul.mainUl{
+		position: relative;
+		width: 245px;
+		margin-top: 0;
+		float: none;
+		display: block;
+		clear: both;
+		padding-top: 25px;
+		z-index: 2;
+	}
+	header ul.mainUl > li{
+		height: auto !important;
+		background-color: rgba(0,0,0,0.9);
+		display: none;
+		float: none;
+		width: 145px;
+		padding: 10px;
+	}
+	header ul.mainUl > li:first-child{margin-left: 23px;}
+	header ul.subMenuUl{
+		display: none;
+		position: relative;
+		top: 10px;		
+	}
+	header ul.subMenuUl a{
+		width: 100%;
+	}
+	header #menuIcon{display: block;}
+}
+@media(max-width:983px){
+	section .infoForm, section #converter , section .Instock{
+		margin-right: 0;
+		display: block;
+		clear: both;
+		margin-top: 10px;
+	}
+}
+@media(max-width:986px){
+	.payment{
+		height:auto;
+	}
+	.payment .addresInfo{border-bottom: 2px solid #c8c8c8; }
+	.payment .method , .payment .addresInfo{
+		float: none;
+		text-align: center;
+		border-right: none;
+		margin: 0 auto;
+		padding: 10px;
+	}
+	.onlineSecurity > div{
+		float: none !important;
+		margin: 10px auto;
+		width: 463px;
+	}
+	.continueShopingPage{
+		height: auto;
+		padding-bottom: 20px;
+	}
+}
+@media(max-width:983px){
+		section #totsTeam {
+		float: none;
+		margin: 0 auto;
+		display: block;
+	}
+	section .Instock{width: 100%;}
+}
+@media(max-width:881px){
+    .copyright p{float: none;}
+    .copyright{text-align: center;}
+    footer{
+        height: auto;
+        text-align: center;
+    }
+    footer ul.mainList li{
+        clear: both;
+        width: 100%;
+        float: none;
+    }
+    footer .products p , footer .products img{float: none;}
+	footer .products img{margin-right: 0;}
+    footer .products{margin-bottom: 10px;}
+    footer h3{margin-top: 20px;}
+}
+
+@media(max-width:707px){
+	.tots{height: auto;}
+	.tots .selectedPlayer{
+		margin-bottom: 20px;
+		width: 100%;
+		float: none;
+		border-right: none;
+		border-bottom: 1px solid #000;
+		text-align: center;
+	}
+	.tots .selectedPlayer img{margin: 10px 0;}
+	.tots .players {text-align: center;}
+	.tots .players img{
+		float: none;
+		display: inline-block;
+	}
+}
+@media(max-width:676px){
+	.payment .method{width: 100%;}}
+@media(max-width:655px){section .Instock{width: 100%;}}
+@media(max-width:575px){
+	.payment .method{
+		width: 100%;
+		text-align: center;
+	}
+	.payment .method > div{
+		margin: 5px auto !important;
+		float: none;
+		border-right: none;
+		border-left: none !important;
+	}
+
+}
+@media(max-width:506px){
+    .copyright img{
+        width: 100%;
+        height: auto;
+    }
+	.onlineSecurity > div{
+		width: 100%;
+		height: auto;
+		padding: 10px;
+	}
+	
+}
+
+
+@media(max-width:464px){
+    header ul{width: 100%;}
+    header ul li{
+        background-color: rgba(0,0,0, 0.4);
+        padding: 10px 5px;
+    }
+}
+@media(max-width:375px){
+	.copyright p{font-size: 12px;}
+	header #search{margin-top: -35px;}
+}
+@media(max-width:355px){
+	section .infoForm input[type=text], section .infoForm{width: 100%;}
+
+	header ul.mainUl{
+		padding-top: 0;
+	    top: -40px;
+	}
+
+}
+@media(max-width:320px){
+	header #search {
+    	margin-top: 12px;
+    	z-index: 2;
+    	position: relative;
+	}
+}

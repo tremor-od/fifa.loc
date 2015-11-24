@@ -1,0 +1,433 @@
+
+/************************************** general  */
+
+h1, h2, h3, h4, h5, h6, ul, p{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Brandon_blk;
+    src:url(../fonts/Brandon_blk.otf);
+}
+@font-face {
+    font-family: Brandon_bld;
+    src:url(../fonts/Brandon_bld.otf);
+}
+.wrapper{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: initial;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+}
+.container{
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*********************************** header */
+header{
+	position: relative;
+    height: 127px;
+    background-image: url(../images/header_bg.png);
+    background-size: cover;
+    background-position: center center;
+}
+header #menuIcon{
+	display: none;
+	cursor: pointer;
+	left: 0px;
+	position: absolute;
+	top: 90px;
+	color: #fff;
+}
+header #menuIcon img{
+	top:9px;
+	position: relative;
+}
+header #search{
+	overflow: hidden;
+    float: right;
+    margin-top: 70px;
+    margin-left: 10px;
+}
+header #search img , header #search input[type=text]{
+	position: relative;
+	right: -125px;
+}
+header #search input[type=text]{
+	padding: 10px;
+	width: 100px;
+	
+}
+header #logo{
+    float: left;
+    margin-top: 40px;
+}
+header ul.mainUl{
+    margin-top: 70px;
+    list-style: none;
+    float: right;
+}
+header ul.mainUl > li{
+	position: relative;
+    float: left;
+    background-image: url(../images/arrow_down.png);
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    margin-left: 23px;
+    padding-right: 20px;
+}
+header ul.mainUl > li a{
+	padding-bottom: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    color:#fff;
+    font-weight: 700;
+	font-family: Brandon_bld;
+}
+header ul.mainUl > li:first-child{margin-left: 0px;}
+header .myAccount , header .coinsStatus{
+	top: 0px;
+	text-align: center;
+	padding-top: 10px;
+    position: absolute;
+    right: 0;
+    width: 132px;
+    height: 39px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    float: right;
+    box-sizing: border-box;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+header .coinsStatus{
+	right: 132px;
+	width: 180px;
+	background-color: #eebc00;
+	color: #000000;
+}
+header .myAccount img{
+    margin-top: 5px;
+    margin-left: 5px;
+    position: relative;
+    top:5px;
+}
+
+h1{
+    font-family: Brandon_bld;
+	font-size: 36px;
+	color: #ffffff;
+	padding-top: 84px;
+}
+
+
+header ul.mainUl{
+    margin-top: 70px;
+    list-style: none;
+    float: right;
+}
+header ul.mainUl > li{
+	position: relative;
+    float: left;
+    background-image: url(../images/arrow_down.png);
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    margin-left: 23px;
+    padding-right: 20px;
+}
+header ul.mainUl > li a{
+	padding-bottom: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    color:#fff;
+    font-weight: 700;
+	font-family: Brandon_bld;
+}
+
+header ul.subMenuUl{
+	display: none;
+	position: absolute;
+	list-style: none;
+	top:40px;
+}
+header ul.subMenuUl li {display: block;}
+header ul.subMenuUl li a{
+	display: block;
+	background-color: #202122;
+	padding: 10px;
+	width: 100px;
+}
+
+/*********************************** accountInfo */
+
+.accountInfo {
+	height: 590px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	padding-top: 77px;
+	clear: both;
+}
+.accountInfo h2{
+	font-size: 18px;
+    font-family: Brandon_bld;
+	color: #515151;
+}
+.accountInfo h3{
+	clear: both;
+	color: #515151;
+    font-family: Brandon_bld;
+	font-size: 14px;
+}
+.accountInfo  p b{
+	font: 700 14px Calibri;
+}
+.accountInfo h2 span{
+	font-style: italic;
+	color: #000000;
+}
+.accountInfo p{	font: 400 12px Calibri;}
+.accountInfo p a {
+	text-decoration: none;
+	color: #2083ac;
+	font-weight: 700;
+}
+.recentOrders{
+	margin-top: 40px;
+	float: left;
+}
+.recentOrders h3 , .billingAddress h3{
+    font-family: Brandon_bld;
+	color: #515151;
+	font-size: 14px;
+	margin-bottom: 9px;
+}
+.recentOrders .tableBox{
+	margin-bottom: 30px;
+	border:2px solid #eeeeee;
+	width: 602px;
+	height: 260px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.recentOrders .tableBox table{
+	width: 97%;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.recentOrders .tableBox table th{
+	padding: 15px 0 8px 20px;
+	font-size: 12px;
+    font-family: Brandon_bld;
+	color: #515151;
+	border-bottom: 1px solid #eebc00;
+}
+.recentOrders .tableBox table td{
+	padding-right: 40px;
+	padding-left: 20px;
+	font: 700 12px Calibri;
+	color: #515151;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	border-bottom: 1px solid #eeeeee;
+}
+.recentOrders .tableBox table td:first-child{color: #2083ac;}
+
+.billingAddress{
+	margin-top: 40px;
+	float: right;
+}
+.billingAddress .info{
+	width: 336px;
+	height: 160px;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #eeeeee;
+	font: 400 12px Calibri;
+}
+.billingAddress .info ul{list-style: none;}
+.billingAddress .info a{
+	width: 72px;
+	height: 26px;
+	background-color: #eebc00;
+	display: block;
+	text-align: center;
+	float: right;
+	color: #000000;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Brandon_bld;
+	font-size: 11px;
+	padding-top: 5px;
+	border-radius: 5px;
+}
+
+@media(max-width:980px){
+	.accountInfo{height: auto;}
+	.billingAddress .info , .recentOrders .tableBox{
+		float: none;
+		margin: 0 auto;
+	}
+	.billingAddress , .recentOrders {float: none;}
+	.recentOrders h3, .billingAddress h3{text-align: center;}
+}
+@media(max-width:640px){
+	.recentOrders .tableBox{
+		width: 100%;
+	}
+	.recentOrders .tableBox table td , .recentOrders .tableBox table th{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+}
+@media(max-width:350px){
+	.billingAddress .info{width: 100%;}
+	
+}
+
+/*********************************** footer */
+footer{
+    margin: 0 auto;
+    clear: both;
+    width: 100%;
+    background-color: #343434;
+    color: #fff;
+    height: 473px;
+    padding-top: 57px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+footer h3{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: BrandonGrotesque , sans-serif;
+    margin-bottom: 32px;
+}
+footer ul{list-style: none;}
+footer ul.mainList li{
+  float: left;
+    width: 33.3%;
+}
+footer .products{
+    clear: both;
+    margin-bottom: 145px;
+}
+footer .products img{
+    margin-right: 18px;
+    float: left;
+}
+footer .products p{
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Calibri;
+}
+footer .products p span{font-weight: 400;}
+footer ul.loremIpsumList li{
+    width: 100%;
+    margin-bottom: 30px;
+}
+/*********************************** copyright */
+.copyright {
+    background-color: #000;
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.copyright p{    float: right;}
+/*********************************** queries */
+
+@media(max-width:990px){
+    .container{padding: 0 10px;}
+}
+@media(max-width:900px){
+	header ul.mainUl{
+		position: relative;
+		width: 245px;
+		margin-top: 0;
+		float: none;
+		display: block;
+		clear: both;
+		padding-top: 25px;
+		z-index: 2;
+	}
+	header ul.mainUl > li{
+		height: auto !important;
+		background-color: rgba(0,0,0,0.9);
+		display: none;
+		float: none;
+		width: 145px;
+		padding: 10px;
+	}
+	header ul.mainUl > li:first-child{margin-left: 23px;}
+	header ul.subMenuUl{
+		display: none;
+		position: relative;
+		top: 10px;		
+	}
+	header ul.subMenuUl a{
+		width: 100%;
+	}
+	header #menuIcon{display: block;}
+}
+@media(max-width:881px){
+    .copyright p{float: none;}
+    .copyright{text-align: center;}
+    footer{
+        height: auto;
+        text-align: center;
+    }
+    footer ul.mainList li{
+        clear: both;
+        width: 100%;
+        float: none;
+    }
+    footer .products p , footer .products img{float: none;}
+	footer .products img{margin-right: 0;}
+    footer .products{margin-bottom: 10px;}
+    footer h3{margin-top: 20px;}
+}
+
+@media(max-width:506px){
+    .copyright img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-width:464px){
+    header ul{width: 100%;}
+    header ul li{
+        background-color: rgba(0,0,0, 0.4);
+        padding: 10px 5px;
+    }
+}
+@media(max-width:375px){
+	.copyright p{font-size: 12px;}
+	header #search{margin-top: -35px;}
+}
+@media(max-width:355px){
+	header ul.mainUl{
+		padding-top: 0;
+	    top: -40px;
+	}
+}
+@media(max-width:320px){
+	header #search {
+    	margin-top: 12px;
+    	z-index: 2;
+    	position: relative;
+	}
+}

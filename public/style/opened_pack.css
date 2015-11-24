@@ -1,0 +1,552 @@
+/************************************** animate  */
+.shadowPlayer{
+	-webkit-box-shadow: -1px 10px 92px 10px rgba(245,167,10,1);
+	-moz-box-shadow: -1px 10px 92px 10px rgba(245,167,10,1);
+	box-shadow: -1px 10px 92px 10px rgba(245,167,10,1);
+}
+/************************************** general  */
+
+h1, h2, h3, h4, h5, h6, ul, p{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Brandon_blk;
+    src:url(../fonts/Brandon_blk.otf);
+}
+@font-face {
+    font-family: Brandon_bld;
+    src:url(../fonts/Brandon_bld.otf);
+}
+.wrapper{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: initial;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+}
+.container{
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+}
+img{cursor: pointer;}
+/*********************************** header */
+header{
+	position: relative;
+    height: 127px;
+    background-image: url(../images/header_bg.png);
+    background-size: cover;
+    background-position: center center;
+}
+header #menuIcon{
+	display: none;
+	cursor: pointer;
+	left: 0px;
+	position: absolute;
+	top: 90px;
+	color: #fff;
+}
+header #menuIcon img{
+	top:9px;
+	position: relative;
+}
+header #search{
+	overflow: hidden;
+    float: right;
+    margin-top: 70px;
+    margin-left: 10px;
+}
+header #search img , header #search input[type=text]{
+	position: relative;
+	right: -125px;
+}
+header #search input[type=text]{
+	padding: 10px;
+	width: 100px;
+	
+}
+header #logo{
+    float: left;
+    margin-top: 40px;
+}
+header ul.mainUl{
+    margin-top: 70px;
+    list-style: none;
+    float: right;
+}
+header ul.mainUl > li{
+	position: relative;
+    float: left;
+    background-image: url(../images/arrow_down.png);
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    margin-left: 23px;
+    padding-right: 20px;
+}
+header ul.mainUl > li a{
+	padding-bottom: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    color:#fff;
+    font-weight: 700;
+	font-family: Brandon_bld;
+}
+header ul.mainUl > li:first-child{margin-left: 0px;}
+header .myAccount{
+    position: absolute;
+    right: 0px;
+    width: 132px;
+    height: 39px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    float: right;
+    box-sizing: border-box;
+}
+header .myAccount img{
+    margin-top: 5px;
+    margin-left: 5px;
+    position: relative;
+    top:5px;
+}
+header ul.subMenuUl{
+	display: none;
+	position: absolute;
+	list-style: none;
+	top:40px;
+}
+header ul.subMenuUl li {display: block;}
+header ul.subMenuUl li a{
+	display: block;
+	background-color: #202122;
+	padding: 10px;
+	width: 100px;
+}
+
+
+/*********************************** footer */
+footer{
+    margin: 0 auto;
+    clear: both;
+    width: 100%;
+    background-color: #343434;
+    color: #fff;
+    height: 473px;
+    padding-top: 57px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+footer h3{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: BrandonGrotesque , sans-serif;
+    margin-bottom: 32px;
+}
+footer ul{list-style: none;}
+footer ul.mainList li{
+  float: left;
+    width: 33.3%;
+}
+footer .products{
+    clear: both;
+    margin-bottom: 145px;
+}
+footer .products img{
+    margin-right: 18px;
+    float: left;
+}
+footer .products p{
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Calibri;
+}
+footer .products p span{font-weight: 400;}
+footer ul.loremIpsumList li{
+    width: 100%;
+    margin-bottom: 30px;
+}
+/*********************************** copyright */
+.copyright {
+    background-color: #000;
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.copyright p{    float: right;}
+
+/*********************************** tots */
+.players{
+	box-sizing: border-box;
+	max-width: 690px;
+	float: right;
+	margin-top: -15px;
+}
+
+.tots{
+	clear: both;
+	height: 560px;
+}
+.tots h1{
+	margin-top: 80px;
+	color: #ffffff;
+    font-family: Brandon_bld;
+	font-size: 36px;
+}
+.tots .selectedPlayer{
+	padding-right: 15px;
+	box-sizing: border-box;
+	border-right: 1px solid #000;
+	width: 248px;
+	height: 391px;
+	float: left;
+}
+
+/**************************************** try */
+
+.players .border:nth-child(1) .card{background-image: url(../images/concept.png);}
+.players .border:nth-child(2) .card{background-image: url(../images/bronze-rare.png);}
+.players .border:nth-child(3) .card{background-image: url(../images/turquoise.png);}
+.players .border:nth-child(4) .card{background-image: url(../images/bronze-if.png);}
+.players .border:nth-child(5) .card{background-image: url(../images/bronze.png);}
+.players .border:nth-child(6) .card{background-image: url(../images/gold-tots.png);}
+.players .border:nth-child(7) .card{background-image: url(../images/green.png);}
+.players .border:nth-child(8) .card{background-image: url(../images/pink.png);}
+.players .border:nth-child(9) .card{background-image: url(../images/toty.png);}
+
+
+
+/**************************************** try */
+
+.tots .selectedPlayer .card{
+	margin-top: 40px;
+	margin-left: 0px;
+	display: block;
+	float: none;
+	background-image: url(../images/gold.png);
+	position: relative;
+	z-index: 2;
+}
+.tots .selectedPlayer p{
+	margin-bottom: 10px;
+	color: #eebc00;
+    font-family: Brandon_bld;
+	font-size: 18px;
+}
+.tots .selectedPlayer .border{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+	width: 138px;
+    height: 188px;
+}
+.tots .players .card{
+	display: none;
+	z-index: 2;
+	margin-bottom: 0px;
+}
+.players .border {
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+    width: 138px;
+    height: 188px;
+    text-align: center;
+    padding-top: 14px;
+    margin-bottom: 14px;
+}
+/*********************************** card */
+.tots .card{
+	float: right;
+	cursor: pointer;
+	padding: 13px;
+	color: #fff;
+	box-sizing: border-box;
+	background-image: url(../images/silver-tots.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 195px;
+	width: 131px;
+}
+.tots .card:hover{
+	margin-top: -15px;
+}
+.tots .mainCard{
+	position: relative;
+	margin-top: 115px;
+	height: 188px;
+}
+.tots img#circle{
+    position: absolute;
+    width: 263px;
+    left: -63px;
+    bottom: -30px;
+    z-index: 1;
+}
+.tots .card .club{
+	float: right;
+}
+.tots .card .club img{
+	display: block;
+	width: 30px;
+}
+.tots .card #player_img{
+	margin-top: -7px;
+	margin-left: -3px;
+	float: left;
+	width: 62px;
+}
+.tots .card h4{
+	margin-right: 5px;
+	font-size: 17px;
+	text-align: right;
+}
+.tots .card h4 span{
+	font-size: 14px;
+	font-weight: 500;
+}
+.tots .card h3{
+	text-align: center;
+	font-size: 13px;
+	font-weight: 700;
+}
+.tots .card .rating{clear: both;}
+.tots .card p , .tots .selectedPlayer .card p{
+	color: #fff;
+	margin-bottom:2px;
+	font-size: 13px;
+	font-family: sans-serif;
+	font-weight: 700;
+}
+.card .leftFloat{
+	text-align: left;
+	float: left;
+	margin-top:3px;
+}
+.card .rightFloat{
+	float: right;
+	margin-top: 3px;
+}
+/*********************************** hover */
+body.off:before{z-index: -1;}
+body:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.borderBack{
+	background-image: url(../images/border.png);
+	z-index: 1;
+}
+
+.expand{
+	width: 139px !important;
+}
+
+/*********************************** queries */
+
+@media(max-width:990px){
+	.container{padding: 0 10px;}
+	.players{width: 420px;}
+}
+@media(max-width:900px){
+	header ul.mainUl{
+		position: relative;
+		width: 245px;
+		margin-top: 0;
+		float: none;
+		display: block;
+		clear: both;
+		padding-top: 25px;
+		z-index: 2;
+	}
+	header ul.mainUl > li{
+		height: auto !important;
+		background-color: rgba(0,0,0,0.9);
+		display: none;
+		float: none;
+		width: 145px;
+		padding: 10px;
+	}
+	header ul.mainUl > li:first-child{margin-left: 23px;}
+	header ul.subMenuUl{
+		display: none;
+		position: relative;
+		top: 10px;		
+	}
+	header ul.subMenuUl a{
+		width: 100%;
+	}
+	header #menuIcon{display: block;}
+}
+
+@media(max-width:881px){
+    .copyright p{float: none;}
+    .copyright{text-align: center;}
+    footer{
+        height: auto;
+        text-align: center;
+    }
+    footer ul.mainList li{
+        clear: both;
+        width: 100%;
+        float: none;
+    }
+    footer .products p , footer .products img{float: none;}
+	footer .products img{margin-right: 0;}
+    footer .products{margin-bottom: 10px;}
+    footer h3{margin-top: 20px;}
+}
+
+@media(max-width:707px){
+	.players{width: 100%;}
+	.tots{height: auto;}
+	.tots .mainCard{
+    position: relative;
+    margin: 20px auto;
+    height: 188px;
+    float: none;
+    width: 125px;
+	}
+	.tots .selectedPlayer{
+		margin-bottom: 20px;
+		width: 100%;
+		float: none;
+		border-right: none;
+		border-bottom: 1px solid #000;
+		text-align: center;
+	}
+	.tots .selectedPlayer .card{margin: 10px 0;}
+	.tots .players {text-align: center;}
+	.tots .players .border{
+		float: none;
+		margin: 0 auto !important;
+		display: inline-block;
+	}
+	.tots .players{margin-top: 0;}
+}
+@media(max-width:506px){
+    .copyright img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media(max-width:464px){
+    header ul{width: 100%;}
+    header ul li{
+        background-color: rgba(0,0,0, 0.4);
+        padding: 10px 5px;
+    }
+}
+@media(max-width:375px){
+	.copyright p{font-size: 12px;}
+	header #search{margin-top: -35px;}
+}
+@media(max-width:355px){
+	header ul.mainUl{
+		padding-top: 0;
+	    top: -40px;
+	}
+}
+ .tots .selectedPlayer .mainCard ,  .tots .selectedPlayer .card {display: none;}
+
+
+@media(max-width:320px){
+	header #search {
+    	margin-top: 12px;
+    	z-index: 2;
+    	position: relative;
+	}
+}
+
+
+/******************************************* testing */
+
+.tots .selectedPlayer .border{position: relative;}
+.tots .selectedPlayer .border.noshine::before {
+    content: "";
+	z-index: 2;
+    position: absolute;
+    top: 26px;
+    width: 114px;
+    height: 78px;
+    bottom: 0;
+    left: 9px;
+    right: 0;
+    background-position:-500px -50px;
+    background-repeat:no-repeat;
+    background-image: -webkit-gradient(
+        linear, 0 0, 100% 100%,
+        color-stop(0% , rgba(255, 255, 255, 0.3)),
+        color-stop(37%, rgba(255, 255, 255, 0.3)),
+        color-stop(45%, rgba(255, 255, 255, 0.8)),
+        color-stop(50%, rgba(255, 255, 255, 0.0))
+    );
+    background-image: -moz-linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0.3) 37%,
+        rgba(255, 255, 255, 0.8) 45%,
+        rgba(255, 255, 255, 0.0) 50%
+    );
+    -moz-background-size:250% 250%, 100% 100%;
+      -o-background-size:250% 250%;
+         background-size:250% 250%;
+    
+    -webkit-transition: background-position 0s ease;
+       -moz-transition: background-position 0s ease;
+            transition: background-position 0s ease;
+}
+.selectedPlayer .border.shine::before{
+	 content: "";
+	z-index: 3;
+    position: absolute;
+   	top: 26px;
+    width: 114px;
+    height: 78px;
+    bottom: 0;
+    left: 9px;
+    right: 0;
+    background-repeat:no-repeat;
+    background-image: -webkit-gradient(
+        linear, 0 0, 100% 100%,
+        color-stop(0% , rgba(255, 255, 255, 0.3)),
+        color-stop(37%, rgba(255, 255, 255, 0.3)),
+        color-stop(45%, rgba(255, 255, 255, 0.8)),
+        color-stop(50%, rgba(255, 255, 255, 0.0))
+    );
+    background-image: -moz-linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0.3) 37%,
+        rgba(255, 255, 255, 0.8) 45%,
+        rgba(255, 255, 255, 0.0) 50%
+    );
+    -moz-background-size:250% 250%, 100% 100%;
+      -o-background-size:250% 250%;
+         background-size:250% 250%;
+    
+    -webkit-transition: background-position 0s ease;
+       -moz-transition: background-position 0s ease;
+            transition: background-position 0s ease;
+	
+	 background-position:0px 0;
+    -webkit-transition-duration: .5s;
+       -moz-transition-duration: .5s;
+            transition-duration: .5s;
+}
+

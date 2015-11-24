@@ -1,0 +1,382 @@
+/************************************** general  */
+
+h1, h2, h3, h4, h5, h6, ul, p{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Brandon_blk;
+    src:url(../fonts/Brandon_blk.otf);
+}
+@font-face {
+    font-family: Brandon_bld;
+    src:url(../fonts/Brandon_bld.otf);
+}
+.wrapper{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: initial;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+}
+.container{
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*********************************** header */
+header{
+	position: relative;
+    height: 127px;
+    background-image: url(../images/header_bg.png);
+    background-size: cover;
+    background-position: center center;
+}
+header #menuIcon{
+	display: none;
+	cursor: pointer;
+	left: 0px;
+	position: absolute;
+	top: 90px;
+	color: #fff;
+}
+header #menuIcon img{
+	top:9px;
+	position: relative;
+}
+header #search{
+	overflow: hidden;
+    float: right;
+    margin-top: 70px;
+    margin-left: 10px;
+}
+header #search img , header #search input[type=text]{
+	position: relative;
+	right: -125px;
+}
+header #search input[type=text]{
+	padding: 10px;
+	width: 100px;
+	
+}
+header #logo{
+    float: left;
+    margin-top: 40px;
+}
+header ul.mainUl{
+    margin-top: 70px;
+    list-style: none;
+    float: right;
+}
+header ul.mainUl > li{
+	position: relative;
+    float: left;
+    background-image: url(../images/arrow_down.png);
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    margin-left: 23px;
+    padding-right: 20px;
+}
+header ul.mainUl > li a{
+	padding-bottom: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    color:#fff;
+    font-weight: 700;
+	font-family: Brandon_bld;
+}
+header ul.mainUl > li:first-child{margin-left: 0px;}
+header .myAccount{
+    position: absolute;
+    right: 0px;
+    width: 132px;
+    height: 39px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    float: right;
+    box-sizing: border-box;
+}
+header .myAccount img{
+    margin-top: 5px;
+    margin-left: 5px;
+    position: relative;
+    top:5px;
+}
+header ul.subMenuUl{
+	display: none;
+	position: absolute;
+	list-style: none;
+	top:40px;
+}
+header ul.subMenuUl li {display: block;}
+header ul.subMenuUl li a{
+	display: block;
+	background-color: #202122;
+	padding: 10px;
+	width: 100px;
+}
+
+/*********************************** footer */
+footer{
+    margin: 0 auto;
+    clear: both;
+    width: 100%;
+    background-color: #343434;
+    color: #fff;
+    height: 473px;
+    padding-top: 57px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+footer h3{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: BrandonGrotesque , sans-serif;
+    margin-bottom: 32px;
+}
+footer ul{list-style: none;}
+footer ul.mainList li{
+  float: left;
+    width: 33.3%;
+}
+footer .products{
+    clear: both;
+    margin-bottom: 145px;
+}
+footer .products img{
+    margin-right: 18px;
+    float: left;
+}
+footer .products p{
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Calibri;
+}
+footer .products p span{font-weight: 400;}
+footer ul.loremIpsumList li{
+    width: 100%;
+    margin-bottom: 30px;
+}
+/*********************************** copyright */
+.copyright {
+    background-color: #000;
+    color: #ffffff;
+    padding: 20px 0;
+    width:100%;
+    margin: 0 auto;
+}
+.copyright p{    float: right;}
+
+/************************************** contact Us Section  */
+
+h1{
+    font-family: Brandon_bld;
+	font-size: 36px;
+	color: #ffffff;
+	padding-top: 84px;
+	padding-bottom: 15px;
+}
+
+.contactUsSection{
+	height: 442px;
+	box-sizing: border-box;
+	padding-top: 75px;
+	padding-bottom: 35px;
+	background-color: #ffffff;
+}
+.contactUsSection h2{
+    font-family: Brandon_bld;
+	font-size: 18px;
+	color: #515151;
+}
+.contactUsSection p{
+	font: 400 12px Calibri;
+	color: #000000;
+}
+.contactUsSection p a{
+	color: #2083ac;
+	text-decoration: none;
+	font-weight: 700;
+}
+.contactUsSection .contactForm{
+	margin-top: 32px;
+	width: 599px;
+	float: left;
+	height: 238px;
+	box-sizing: border-box;
+	background-color: #eeeeee;
+	border-radius: 10px;
+	padding: 28px;
+}
+.contactForm form > div{
+	width: 252px;
+	float: left;
+}
+.contactForm form input[type="text"], .contactForm form input[type="email"]{
+	width: 100%;
+	box-sizing: border-box;
+	height: 32px;
+	margin-bottom: 18px;
+	border:none;
+	padding-left: 10px;
+	font: 400 12px Calibri;
+}
+.contactForm form textarea{
+	resize: none;
+	width: 252px;
+	height: 132px;
+	margin-left: 38px;
+	border: none;
+	box-sizing: border-box;
+	padding: 10px;
+	font: 400 12px Calibri;
+}
+.contactForm form input[type=submit]{
+	clear: both;
+	float: right;
+	width: 127px;
+	height: 34px;
+	box-sizing: border-box;
+	border: none;
+	color: #fff;
+	background-color: #2083ac;
+    font-family: Brandon_bld;
+	font-size: 12px;
+}
+.contactUsSection .balloon{
+	box-sizing: border-box;
+	padding: 16px;
+	margin-top: 32px;
+	width: 347px;
+	height: 134px;
+	float: right;
+	background: url(../images/dialog.png) no-repeat center center; 
+}
+.contactUsSection .balloon p{
+	text-align: center;
+	color: #ffffff;
+	font: 700 12px Calibri;
+	margin-bottom: 15px;
+}
+
+/*********************************** queries */
+
+@media(max-width:990px){
+	.container{padding: 0 10px;}
+}
+@media(max-width:982px){
+	.contactUsSection{height: auto;}
+	.contactUsSection .contactForm , .contactUsSection .balloon{
+		float: none;
+		margin: 10px auto;
+	}
+}
+@media(max-width:900px){
+	header ul.mainUl{
+		width: 245px;
+		margin-top: 0;
+		float: none;
+		display: block;
+		clear: both;
+		padding-top: 25px;
+		position: relative;
+		z-index: 2;
+	}
+	header ul.mainUl > li{
+		height: auto !important;
+		background-color: rgba(0,0,0,0.9);
+		display: none;
+		float: none;
+		width: 145px;
+		padding: 10px;
+	}
+	header ul.mainUl > li:first-child{margin-left: 23px;}
+	header ul.subMenuUl{
+		display: none;
+		position: relative;
+		top: 10px;		
+	}
+	header ul.subMenuUl a{
+		width: 100%;
+	}
+	header #menuIcon{display: block;}
+}
+@media(max-width:881px){
+    .copyright p{float: none;}
+    .copyright{text-align: center;}
+    footer{
+        height: auto;
+        text-align: center;
+    }
+    footer ul.mainList li{
+        clear: both;
+        width: 100%;
+        float: none;
+    }
+    footer .products p , footer .products img{float: none;}
+	footer .products img{margin-right: 0;}
+    footer .products{margin-bottom: 10px;}
+    footer h3{margin-top: 20px;}
+}
+
+@media(max-width:632px){
+	.contactUsSection .contactForm{
+		width: 100%;
+		height: auto;
+		padding-bottom: 40px;
+	}
+	.contactForm form > div{
+		float: none;
+		margin:10px auto;
+	}
+	.contactForm form textarea{
+		margin: 10px auto;
+		display: block;
+	}
+	
+}
+@media(max-width:506px){
+    .copyright img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-width:464px){
+    header ul{width: 100%;}
+    header ul li{
+        background-color: rgba(0,0,0, 0.4);
+        padding: 10px 5px;
+    }
+}
+@media(max-width:375px){
+	.copyright p{font-size: 12px;}
+	header #search{margin-top: -35px;}
+}
+
+@media(max-width:370px){
+	.contactUsSection .balloon{
+		width: 100%;
+		height: auto;
+		background-size: contain;
+	}
+}
+@media(max-width:355px){
+	header ul.mainUl{
+		padding-top: 0;
+	    top: -40px;
+	}
+}
+
+@media(max-width:320px){
+	header #search {
+    	margin-top: 12px;
+    	z-index: 2;
+    	position: relative;
+	}
+}
