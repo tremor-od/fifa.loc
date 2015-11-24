@@ -54,10 +54,10 @@ return array(
 
         'mysql' => array(
             'driver'    => 'mysql',
-            'host'      => 'tandev.mysql.ukraine.com.ua',
-            'database'  => 'tandev_ninja',
-            'username'  => 'tandev_ninja',
-            'password'  => 'djwq2f5j',
+            'host'      => '',
+            'database'  => '',
+            'username'  => '',
+            'password'  => '',
             'charset'   => 'utf8',
             'collation' => 'utf8_general_ci',
             'prefix'    => '',
